@@ -33,4 +33,5 @@ class EnigmaTest < Minitest::Test
   def test_encrypt_message_is_printed
     assert_equal "hello world", @enigma.message
   end
+
 end

@@ -15,5 +15,5 @@ output_filename = ARVG[1]
 encrypted_message = enigma.encrypt
 File.write output_filename, encrypted_message
 
-# print the file, key and date
+# print the file
 puts "Created #{output_filename} with the key #{key} and date #{date}"
