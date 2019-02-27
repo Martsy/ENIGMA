@@ -9,7 +9,7 @@ class Enigma
   end
 
   def self.random_key
-    Array.new(5) {random_number}.join
+    Array.new(5) { random_number }.join
   end
 
   def self.random_number

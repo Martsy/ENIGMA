@@ -19,10 +19,10 @@ class EnigmaTest < Minitest::Test
     assert_equal 5, random_key.length
   end
 
-  def test_each_key_is_random
-    keys = 1000.times.map { Enigma.random_key }
-    assert_equal
-  end
+  # def test_each_key_is_random
+  #   keys = 1000.times.map { Enigma.random_key }
+  #   assert_equal
+  # end
 
   def test_number_is_0_to_9
     number_shown = 1000.times.map { Enigma.random_key }.join

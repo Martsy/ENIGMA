@@ -2,8 +2,8 @@ require 'date'
 require './lib/enigma'
 
 # read input file
-input_filename       = ARVG[0]
-unencrypted_message  = File.read input_filename
+input_filename      = ARVG[0]
+unencrypted_message = File.read input_filename
 
 # encryption
 enigma = Enigma.new(unencrypted_message, key, date)
