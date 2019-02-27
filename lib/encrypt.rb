@@ -16,4 +16,4 @@ encrypted_message = enigma.encrypt
 File.write output_filename, encrypted_message
 
 # print the file, key and date
-puts "Created #{output_filename} with the key #{key} and date 240818"
+puts "Created #{output_filename} with the key #{key} and date #{date}"

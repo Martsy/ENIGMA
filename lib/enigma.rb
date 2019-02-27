@@ -1,12 +1,21 @@
 require 'date'
 
 class Enigma
-  def self.random_key
-    (68403)
   ALPH = ("a".."z").to_a << " "
 
   def initialize(unencrypted_message)
+    @unencrypted_message = unencrypted_message
+    @key = key
+    @date = date
+  end
 
+  def self.random_key
+    Array.new(5) {random_number}.join
+    (82648)
+  end
+
+  def self.random_number
+    [0..9].sample
   end
 
   attr_reader :message
